@@ -30,7 +30,7 @@ const GetCountries = () => {
                                     <ListItemIcon>
                                         <PublicIcon />
                                     </ListItemIcon>
-                                <ListItemText>
+                                    <ListItemText>
                                         {item.name}
                                     </ListItemText>
                                 </ListItem>

@@ -36,6 +36,7 @@ const GetNumCountries = () => {
     const porcentajeDeaths = Number(((deaths/confirmed)*100).toFixed(2))
     const porcentajeActive = Number(((active/confirmed)*100).toFixed(2))
 
+    /* Convertir el nombre del pais a mayuscula */
     const name_capital_letter = name.toUpperCase() 
 
     const texts = {
@@ -62,15 +63,21 @@ const GetNumCountries = () => {
             />
 
             <SeeCountries 
-                number={recovered} 
+                number={active} 
                 title={texts.title[1]} 
                 subtitle={texts.subtitle[1]}
             />
 
             <SeeCountries 
-                number={deaths} 
+                number={recovered} 
                 title={texts.title[2]} 
                 subtitle={texts.subtitle[2]}
+           />
+
+            <SeeCountries 
+                number={deaths} 
+                title={texts.title[3]} 
+                subtitle={texts.subtitle[3]}
            />
 
         </div>

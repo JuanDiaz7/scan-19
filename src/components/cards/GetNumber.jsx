@@ -34,7 +34,7 @@ const GetNumber = () => {
     /* textos a utilizar */
     const texts = {
         title:[
-            "GLOBAL CORONAVIRUS INFECTIONS      ",
+            "GLOBAL CORONAVIRUS INFECTIONS",
             "CURRENTLY INFECTED",
             "TOTAL RECOVERED",
             "TOTAL DEATHS",
@@ -56,19 +56,19 @@ const GetNumber = () => {
             />
 
             <CardsPost 
-                number={recovered} 
+                number={active} 
                 title={texts.title[1]} 
                 subtitle={texts.subtitle[1]}
             />
 
             <CardsPost 
-                number={deaths} 
+                number={recovered} 
                 title={texts.title[2]} 
                 subtitle={texts.subtitle[2]}
            />
 
             <CardsPost 
-                number={active} 
+                number={deaths} 
                 title={texts.title[3]} 
                 subtitle={texts.subtitle[3]}
             />
