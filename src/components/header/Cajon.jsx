@@ -1,5 +1,5 @@
 import React from 'react'
-import Lista from './Lista'
+import Lista from '../list/Lista'
 import {
     makeStyles,
     Drawer,

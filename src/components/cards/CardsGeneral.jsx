@@ -34,16 +34,16 @@ const CardsGeneral = () => {
     /* textos a utilizar */
     const texts = {
         title:[
-            "INFECCIONES MUNDIALES POR CORONAVIRUS",
-            "TOTAL DE CONTAGIADOS ACTIVOS",
-            "TOTAL RECUPERADO",
-            "MUERTES TOTALES",
+            "GLOBAL CORONAVIRUS INFECTIONS      ",
+            "CURRENTLY INFECTED",
+            "TOTAL RECOVERED",
+            "TOTAL DEATHS",
         ],
         subtitle:[
-            "La cantidad total de personas que han sido diagnosticadas globalmente con el coronavirus.",
-            `${porcentajeActive}% de las personas infectadas todavía están enfermas.`,
-            `${porcentajeRecovered}% de las personas infectadas se han recuperado.`,
-            `${porcentajeDeaths}% de las personas infectadas murieron.`,
+            "The total amount of people that have globally been diagnosed with the coronavirus.",
+            `${porcentajeActive}% f the infected people are still sick.`,
+            `${porcentajeRecovered}% of the infected people have recovered.`,
+            `${porcentajeDeaths}% of the infected people died.`,
         ]
     }
 
