@@ -1,5 +1,5 @@
 import React from 'react'
-import Lista from '../list/Lista'
+import PaintList from '../list/PaintList'
 import {
     makeStyles,
     Drawer,
@@ -36,7 +36,7 @@ function Cajon(props) {
 
             <div className={classes.toolbar}></div>
             <Divider />
-            <Lista />
+            <PaintList />
 
         </Drawer>
     )

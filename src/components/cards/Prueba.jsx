@@ -25,7 +25,7 @@ const Prueba = (props) => {
                 Ancho de la pantalla: {props.width}  
                 </Typography>
                 <Typography variant="h3" color="initial">
-                    HOLA COMO ETSAS {props.width}
+                    asdasdasd {props.width}
                 </Typography>
             </div>
         </div>

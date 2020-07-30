@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Card, 
-/*     CardMedia,  */
     makeStyles,
     CardContent, 
     Typography
@@ -21,7 +20,7 @@ const useStyles = makeStyles((theme)=>({
     },
 }));
 
-const Cards = (props) => {
+const SeeCountries = (props) => {
 
     const classes = useStyles();
 
@@ -44,5 +43,4 @@ const Cards = (props) => {
         </div> 
     );
 }
- 
-export default Cards;
+export default SeeCountries

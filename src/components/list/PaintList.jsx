@@ -8,7 +8,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn'
 
 
 
-const Lista = () => {
+const PaintList = () => {
 
     return (
         <div >
@@ -23,9 +23,10 @@ const Lista = () => {
                 icon={<LocationOnIcon/>} 
             />
             <Divider  />
+
             <GetCountries  />
         </div>
     )
 }
 
-export default Lista
+export default PaintList

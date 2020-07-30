@@ -23,15 +23,19 @@ const GetCountries = () => {
         <div >
             {            
                 countries.map(item=>(
-                    <List component="nav" key={item.name}>
-                            <ListItem button> 
-                            <ListItemIcon>
-                                <PublicIcon />
-                            </ListItemIcon>
-                        <ListItemText>
-                                {item.name}
-                            </ListItemText>
-                        </ListItem>
+                    <List component="nav" key={item.name} >
+                        <Router>
+                            <Link to={item.name} style={{textDecoration: "none", color: "#000000DE"}}>
+                                <ListItem button> 
+                                    <ListItemIcon>
+                                        <PublicIcon />
+                                    </ListItemIcon>
+                                <ListItemText>
+                                        {item.name}
+                                    </ListItemText>
+                                </ListItem>
+                            </Link>
+                        </Router>
                     </List>
                 ))
             }

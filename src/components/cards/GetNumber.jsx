@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react'
-import CardsPos from './CardsPos'
+import CardsPost from './CardsPost'
 
-const CardsGeneral = () => {
+const GetNumber = () => {
 
     const  [confirmedAPI, setConfirmedAPI] = useState([])
     const  [recoveredAPI, setRecoveredAPI] = useState([])
@@ -41,7 +41,7 @@ const CardsGeneral = () => {
         ],
         subtitle:[
             "The total amount of people that have globally been diagnosed with the coronavirus.",
-            `${porcentajeActive}% f the infected people are still sick.`,
+            `${porcentajeActive}% of the infected people are still sick.`,
             `${porcentajeRecovered}% of the infected people have recovered.`,
             `${porcentajeDeaths}% of the infected people died.`,
         ]
@@ -49,33 +49,31 @@ const CardsGeneral = () => {
 
     return (
         <Fragment>
-            <CardsPos 
+            <CardsPost 
                 number={confirmed} 
                 title={texts.title[0]} 
                 subtitle={texts.subtitle[0]}
             />
 
-            <CardsPos 
+            <CardsPost 
                 number={recovered} 
                 title={texts.title[1]} 
                 subtitle={texts.subtitle[1]}
             />
 
-            <CardsPos 
+            <CardsPost 
                 number={deaths} 
                 title={texts.title[2]} 
                 subtitle={texts.subtitle[2]}
            />
 
-            <CardsPos 
+            <CardsPost 
                 number={active} 
                 title={texts.title[3]} 
                 subtitle={texts.subtitle[3]}
             />
-
-
         </Fragment>
     )
 }
 
-export default CardsGeneral
+export default GetNumber
