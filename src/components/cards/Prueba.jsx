@@ -1,6 +1,5 @@
 import React from 'react'
 import {makeStyles, Typography} from "@material-ui/core"
-import {withWidth,  Hidden, Button} from '@material-ui/core'
 
 
 const drawerWidth = 245;

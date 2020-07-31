@@ -1,5 +1,8 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import CardsPost from './CardsPost'
+import { FaRegDizzy, FaRegSmileBeam, FaRegSadTear} from "react-icons/fa";
+import { FcMindMap } from "react-icons/fc";
+
 
 const GetNumber = () => {
 
@@ -50,24 +53,28 @@ const GetNumber = () => {
     return (
         <Fragment>
             <CardsPost 
+                icons={<FcMindMap/>}
                 number={confirmed} 
                 title={texts.title[0]} 
                 subtitle={texts.subtitle[0]}
             />
 
             <CardsPost 
+                icons={<FaRegSadTear color="purple"/>}
                 number={active} 
                 title={texts.title[1]} 
                 subtitle={texts.subtitle[1]}
             />
 
             <CardsPost 
+                icons={<FaRegSmileBeam color="green"/>}
                 number={recovered} 
                 title={texts.title[2]} 
                 subtitle={texts.subtitle[2]}
            />
 
             <CardsPost 
+                icons={<FaRegDizzy color="red"/>}
                 number={deaths} 
                 title={texts.title[3]} 
                 subtitle={texts.subtitle[3]}

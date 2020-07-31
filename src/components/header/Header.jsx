@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import {AppBar,Toolbar, makeStyles, IconButton, Typography} from "@material-ui/core"
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -6,7 +6,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 const drawerWidth = 240;
 
 const useStyle = makeStyles((theme) => ({
-    offset: theme.mixins.toolbar,
 
     /* hace que el icono del desaparezca */
     menuButton:{
@@ -30,7 +29,6 @@ const Header = (props) => {
 
     const classes = useStyle();
     return (
-        <Fragment>
             <AppBar className={classes.appBar}>
                 <Toolbar> 
                     <IconButton 
@@ -42,13 +40,12 @@ const Header = (props) => {
                         <MenuIcon/>
                     </IconButton>
 
-                    <Typography variant="h6" className={classes.login} >
+                    <Typography variant="h6">
                         SCAN-19
                     </Typography>
                 
                 </Toolbar>
             </AppBar>
-        </Fragment>
     );
 }
  

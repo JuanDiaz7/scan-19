@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Card, 
-/*     CardMedia,  */
     makeStyles,
     CardContent, 
     Typography
@@ -10,15 +9,20 @@ import {
 
 const useStyles = makeStyles((theme)=>({
     AutoMargin:{
-        marginRight: theme.spacing(2),
-        marginLeft: "5px",
+        marginRight: "5px",
+        marginLeft: "5px", /* margen izq cuando esta contraido de las card */
         [theme.breakpoints.up('sm')]: {
-          marginLeft:  245,
+          marginLeft:  280, /* margen derecho cuando esta NO contraido de las card */
+          marginRight: 40, /* margen izq cuando esta contraido de las card */
         },
     }, 
     root: {
-        minWidth: 275,
+        minWidth: 270,
     },
+    SubColor:{
+        background: "#00695c",
+        padding: "0.3rem",
+    }
 }));
 
 const CardsPost = (props) => {
@@ -30,7 +34,7 @@ const CardsPost = (props) => {
             <Card className={classes.root}>
                 <CardContent>
                     <Typography  variant="h5">
-                        {props.title}
+                        {props.icons}  {props.title}
                     </Typography>
                     <Typography variant="h2">
                         {props.number} 
@@ -39,6 +43,7 @@ const CardsPost = (props) => {
                         {props.subtitle} 
                     </Typography>
                 </CardContent>
+                <div className={classes.SubColor}></div>
             </Card>
             <br/>
         </div> 

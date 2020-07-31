@@ -15,9 +15,8 @@ const estilos = makeStyles(theme => ({
     root:{
         display: "flex"
     },
-    toolbar: theme.mixins.toolbar,
-    content: {
-        padding: theme.spacing(3),
+    toolbar:{
+        marginTop: "5rem"
     },
 }))
 
@@ -50,9 +49,7 @@ function Contenedor() {
                     
                 />   
             </Hidden>
-            <div className={classes.content}>
                 <div className={classes.toolbar}></div>
-            </div>
         </div>
     )
 }
