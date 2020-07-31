@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import SeeCountries from './SeeCountries'
-
+import CardPost from '../cards/CardsPost'
 
 const GetNumCountries = () => {
 
@@ -36,12 +35,10 @@ const GetNumCountries = () => {
     const porcentajeDeaths = Number(((deaths/confirmed)*100).toFixed(2))
     const porcentajeActive = Number(((active/confirmed)*100).toFixed(2))
 
-    /* Convertir el nombre del pais a mayuscula */
-    const name_capital_letter = name.toUpperCase() 
 
     const texts = {
         title:[
-            `CORONAVIRUS INFECTIONS ${name_capital_letter}`,
+            `CORONAVIRUS INFECTIONS ${name.toUpperCase()}`,
             `CURRENTLY INFECTED`,
             `TOTAL RECOVERED`,
             `TOTAL DEATHS`,
@@ -56,25 +53,25 @@ const GetNumCountries = () => {
 
     return (
         <div>
-            <SeeCountries 
+            <CardPost 
                 number={confirmed} 
                 title={texts.title[0]} 
                 subtitle={texts.subtitle[0]}
             />
 
-            <SeeCountries 
+            <CardPost 
                 number={active} 
                 title={texts.title[1]} 
                 subtitle={texts.subtitle[1]}
             />
 
-            <SeeCountries 
+            <CardPost 
                 number={recovered} 
                 title={texts.title[2]} 
                 subtitle={texts.subtitle[2]}
            />
 
-            <SeeCountries 
+            <CardPost 
                 number={deaths} 
                 title={texts.title[3]} 
                 subtitle={texts.subtitle[3]}
