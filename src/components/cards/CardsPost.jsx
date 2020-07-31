@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme)=>({
         minWidth: 270,
     },
     SubColor:{
-        background: "#00695c",
+        background: "#8CD2AE",
         padding: "0.3rem",
     }
 }));
