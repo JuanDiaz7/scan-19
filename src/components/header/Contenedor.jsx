@@ -1,13 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Cajon from './Cajon'
-
-
-import {
-    makeStyles,
-    Hidden,
-
-} from '@material-ui/core'
+import { makeStyles, Hidden,} from '@material-ui/core'
 
  
 
