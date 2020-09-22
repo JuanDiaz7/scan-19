@@ -37,7 +37,7 @@ function Contenedor() {
             </Hidden>
             <Hidden smUp>
                 <Cajon 
-                    variant="ptemporary"
+                    variant="temporary"
                     open={abrir}
                     onClose={openDoor}
                     

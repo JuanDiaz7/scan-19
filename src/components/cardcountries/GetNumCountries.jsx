@@ -13,7 +13,7 @@ const GetNumCountries = () => {
 
     useEffect(() => {
         obtenerDatos()
-    },[])
+    })
 
 
 
