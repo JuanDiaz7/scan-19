@@ -19,10 +19,10 @@ const GetNumCountries = () => {
 
     const obtenerDatos = async () =>{
         const data = await fetch(`https://covid19.mathdro.id/api/countries/${name}`)
-        const Api = await data.json()
-        setConfirmedAPI(Api.confirmed)
-        setRecoveredAPI(Api.recovered)
-        setDeathsAPI(Api.deaths)
+        const api = await data.json()
+        setConfirmedAPI(api.confirmed)
+        setRecoveredAPI(api.recovered)
+        setDeathsAPI(api.deaths)
     }
 
     const confirmed = confirmedAPI.value
